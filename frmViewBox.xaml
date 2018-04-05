@@ -1,0 +1,26 @@
+﻿<Window x:Class="frmViewBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="frmViewBox" Height="116" Width="252">
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="{Binding Value, ElementName=sldScale}" ScaleY="{Binding Value, ElementName=sldScale}"/>
+                    <SkewTransform AngleX="{Binding Value, ElementName=sldSkewX}" AngleY="{Binding Value, ElementName=sldSkewY}"/>
+                    <RotateTransform Angle="{Binding Value, ElementName=sldRotate}"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.LayoutTransform>
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}"/>
+            </Grid.Background>
+            <Label Content="Last name :" HorizontalAlignment="Left" Margin="11,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtLast" Text="Seitz" HorizontalAlignment="Left" Height="23" Margin="84,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+            <Label Content="First name :" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFirst" Text="Jeremiah" HorizontalAlignment="Left" Height="23" Margin="84,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+            <Label Content="Born :" HorizontalAlignment="Left" Margin="39,66,0,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="dtpPerson" SelectedDate="10/11/1972" HorizontalAlignment="Left" Margin="84,66,0,0" VerticalAlignment="Top" Width="168"/>
+        </Grid>
+    </Viewbox>
+</Window>

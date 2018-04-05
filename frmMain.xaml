@@ -1,0 +1,12 @@
+﻿<Window x:Class="frmMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WPF Playground" Height="177" Width="276">
+    <Grid>
+        <Button Name="cmdTransform" Content="Transform" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Click="cmdTransform_Click"/>
+        <Button Name="cmdPages" Content="Pages" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="248" KeyDown="cmdPages_Click"/>
+        <Button Content="?" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="248"/>
+        <Button Content="?" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="248"/>
+        <Button Content="?" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="248"/>
+    </Grid>
+</Window>
